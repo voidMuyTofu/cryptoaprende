@@ -1,0 +1,121 @@
+.titulo {
+  padding: 1em;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: hsl(0, 0%, 90%);
+  height: 100vh;
+  width: 50%;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.navItems {
+  margin-top: 8em;
+  list-style-type: none;
+  text-transform: uppercase;
+  padding: 0;
+}
+.a {
+  color: black;
+  padding: 0.5em 2em;
+  display: block;
+  cursor: pointer;
+}
+.a:hover {
+  background-color: hsl(0, 0%, 40%);
+}
+
+.svgMenu {
+  width: 2em;
+  height: 2em;
+  padding: 1.2em;
+}
+
+.svgMenu path,
+.svgMenu polygon,
+.svgMenu rect {
+  fill: #1e88e5;
+}
+
+.svgMenu circle {
+  stroke: #1e88e5;
+  stroke-width: 1;
+}
+
+.svgClose {
+  width: 2em;
+  height: 2em;
+  float: right;
+  padding: 1em;
+}
+
+.svgClose path,
+.svgClose polygon,
+.svgClose rect {
+  fill: #000000;
+}
+
+.svgClose circle {
+  stroke: #000000;
+  stroke-width: 1;
+}
+
+/* Tablets y dispositivos grandes */
+@media (min-width: 768px) {
+  .titulo {
+    font-size: 2em;
+    padding: 0em 0.5em;
+  }
+  .svgMenu {
+    display: none;
+  }
+
+  .svgClose {
+    display: none;
+  }
+
+  .nav {
+    transform: translateX(0);
+    position: unset;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+  }
+
+  .navItems {
+    display: flex;
+    margin: 0;
+    margin-right: 4em;
+  }
+
+  .a {
+    margin: 0.6em 0.5em;
+  }
+
+  .a:hover {
+    background: none;
+    text-decoration: underline 2px;
+    text-underline-offset: 2px;
+  }
+}
+/* PC Portatil */
+@media (min-width: 992px) {
+}
+
+/* PC Escritorio */
+@media (min-width: 1200px) {
+}

@@ -1,0 +1,27 @@
+.App {
+  background-image: url(./public/wave-haikei.svg);
+  background-size: cover;
+  height: 100vh;
+}
+/* Tablets y dispositivos grandes */
+@media (min-width: 768px) {
+  .App {
+    background-color: blue;
+    height: 100vh;
+  }
+}
+/* PC Portatil */
+@media (min-width: 992px) {
+  .App {
+    background-color: green;
+    height: 100vh;
+  }
+}
+
+/* PC Escritorio */
+@media (min-width: 1200px) {
+  .App {
+    background-color: yellow;
+    height: 100vh;
+  }
+}
