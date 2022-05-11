@@ -13,3 +13,10 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
+
+:root {
+  --main-accent-color: #f7e5b5;
+  --main-color: #faedcd;
+  --secordary-color: #edf6f9;
+  --black-color: #000000;
+}
