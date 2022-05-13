@@ -1,11 +1,12 @@
-import "./App.css";
+import styles from "./App.module.css";
+import HeroSection from "./components/HeroSection";
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Fernando</h1>
-    </div>
-  );
+    return (
+        <div className={styles.app}>
+            <HeroSection />
+        </div>
+    );
 }
 
 export default App;

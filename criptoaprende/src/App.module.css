@@ -1,20 +1,21 @@
-.App {
-  background-color: var(--main-color);
-  height: 100vh;
+.app {
+    /* Quitar altura mas tarde*/
+    height: 100vh;
+    background-color: var(--main-color);
 }
 /* Tablets y dispositivos grandes */
 @media (min-width: 768px) {
-  .App {
-  }
+    .app {
+    }
 }
 /* PC Portatil */
 @media (min-width: 992px) {
-  .App {
-  }
+    .app {
+    }
 }
 
 /* PC Escritorio */
 @media (min-width: 1200px) {
-  .App {
-  }
+    .app {
+    }
 }
