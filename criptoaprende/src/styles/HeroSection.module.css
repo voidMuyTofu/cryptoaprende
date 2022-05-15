@@ -1,11 +1,30 @@
 .titulo {
-    text-align: center;
-    width: 9em;
-    font-size: 2.9em;
+  margin-top: 0.5em;
+  text-align: center;
+  width: 9em;
+
+  font-size: 2.9em;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subrayado {
+  text-decoration: underline var(--green-color) 0.47em;
+  text-decoration-skip-ink: none;
+  text-underline-offset: -0.45em;
+}
+
+.description {
+  text-align: center;
+  font-size: 1.27em;
+  font-weight: 300;
+  padding: 0em 1em;
+}
+
+.heroImage {
+  width: 70%;
 }
