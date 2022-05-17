@@ -1,0 +1,30 @@
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo {
+  margin-top: 1.6em;
+  font-size: 2.7em;
+}
+
+.descripcion {
+  margin-top: 0.9em;
+  margin-bottom: 1.3em;
+}
+
+.subrayado {
+  cursor: pointer;
+  text-decoration: underline var(--blue-color) 0.4em;
+  text-decoration-skip-ink: none;
+  text-underline-offset: -0.38em;
+}
+
+.blob1 {
+  position: absolute;
+  z-index: -1;
+  left: 1em;
+  top: 53.2em;
+}

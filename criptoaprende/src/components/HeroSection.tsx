@@ -1,5 +1,5 @@
 import styles from "../styles/HeroSection.module.css";
-import image from "../public/hero.svg";
+import image from "../public/hero3.svg";
 export default function HeroSection() {
   return (
     <div className={styles.container}>
@@ -7,7 +7,7 @@ export default function HeroSection() {
         Iniciate en el mundo de las{" "}
         <span className={styles.subrayado}>criptos</span>
       </h1>
-      <p className={styles.description}>
+      <p className={styles.descripcion}>
         Aprende los primeros pasos para invertir en criptomonedas. Aquí te
         enseñamos a crear y validar una cuenta en un exchange, a como invertir
         en tu primera cripto, o incluso a ganar intereses por las criptomondeas

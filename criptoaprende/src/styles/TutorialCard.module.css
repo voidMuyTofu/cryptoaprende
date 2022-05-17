@@ -1,0 +1,31 @@
+.container {
+  margin-bottom: 1.8em;
+  background-color: var(--secondary-color);
+  width: 73%;
+  text-align: left;
+  border: var(--black-color) 0.3em solid;
+  box-shadow: 0.4em 0.4em var(--black-color);
+  border-radius: 0.5em;
+}
+
+.titulo {
+  font-size: 1.15em;
+  margin-left: 0.3em;
+  margin-top: 0.4em;
+  margin-bottom: 0;
+}
+
+.descripcion {
+  font-size: 1em;
+  padding: 0;
+  margin-left: 0.3em;
+  margin-top: 0.5em;
+}
+
+.tiempo {
+  font-size: 0.9em;
+  padding: 0;
+  margin-left: 0.3em;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}

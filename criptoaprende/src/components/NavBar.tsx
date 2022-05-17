@@ -3,10 +3,20 @@ import { useRef, useState } from "react";
 
 export default function NavBar() {
   const navRef = useRef(null);
+  const [scrolled, setScrolled] = useState(false);
+  const [isClosed, setIsClosed] = useState(true);
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    if (offset > 200) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
   const onClickMenu = (event: any) => {
     setIsClosed((prevCheck) => !prevCheck);
   };
-  const [isClosed, setIsClosed] = useState(true);
 
   return (
     <header className={styles.header}>

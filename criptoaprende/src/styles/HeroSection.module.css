@@ -1,9 +1,9 @@
 .titulo {
-  margin-top: 0.5em;
+  margin-top: 0.7em;
   text-align: center;
   width: 9em;
-
-  font-size: 2.9em;
+  line-height: 1.3em;
+  font-size: 2.7em;
 }
 
 .container {
@@ -18,13 +18,12 @@
   text-underline-offset: -0.45em;
 }
 
-.description {
+.descripcion {
+  margin-top: 1.7em;
   text-align: center;
-  font-size: 1.27em;
-  font-weight: 300;
-  padding: 0em 1em;
 }
 
 .heroImage {
+  margin-top: 2.1em;
   width: 70%;
 }
