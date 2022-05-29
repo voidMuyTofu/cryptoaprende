@@ -2,11 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import NavBar from "./components/NavBar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Tutoriales from "./pages/Tutoriales";
 
 ReactDOM.render(
-    <React.StrictMode>
-        <App />
-    </React.StrictMode>,
-    document.getElementById("root")
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="tutoriales" element={<Tutoriales />} />
+    </Routes>
+  </BrowserRouter>,
+  document.getElementById("root")
 );
