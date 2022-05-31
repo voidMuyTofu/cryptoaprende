@@ -1,40 +1,41 @@
 .titulo {
-  margin-top: -1.8em;
-  text-align: center;
-  width: 9em;
-  line-height: 1.3em;
-  font-size: 2.7em;
+    margin-top: -1.8em;
+    text-align: center;
+    width: 9em;
+    line-height: 1.3em;
+    font-size: 2.7em;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .subrayado {
-  text-decoration: underline var(--green-color) 0.47em;
-  text-decoration-skip-ink: none;
-  text-underline-offset: -0.45em;
+    text-decoration: underline var(--green-color) 0.47em;
+    text-decoration-skip-ink: none;
+    text-underline-offset: -0.45em;
 }
 
 .descripcion {
-  margin-top: 1.7em;
-  text-align: center;
+    margin-top: 1.7em;
+    text-align: center;
 }
 
 .heroImage {
-  margin-top: 2.8em;
-  width: 80%;
-  margin-left: 0.5em;
+    margin-top: 2.8em;
+    width: 80%;
+    margin-left: 0.5em;
 }
 
 .botonTutoriales {
-  background-color: var(--pink-color);
-  font-size: 1.6em;
-  font-weight: 700;
-  padding: 0.6em 0.9em;
-  margin-top: 1.2em;
-  box-shadow: 0.15em 0.15em var(--black-color);
-  border: var(--black-color) 0.2em solid;
+    cursor: pointer;
+    background-color: var(--pink-color);
+    font-size: 1.6em;
+    font-weight: 700;
+    padding: 0.6em 0.9em;
+    margin-top: 1.2em;
+    box-shadow: 0.15em 0.15em var(--black-color);
+    border: var(--black-color) 0.2em solid;
 }

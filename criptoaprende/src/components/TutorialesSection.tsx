@@ -19,20 +19,20 @@ export default function TutorialesSection() {
                     fill="#F7E5B5"
                 />
             </svg>
-            <h1 className={styles.titulo}>Tutoriales</h1>
+            <h1 className={styles.titulo}>Lo más popular</h1>
             <p className={styles.descripcion}>
                 Esta es una selección de los tutoriales más populares. Puedes
                 acceder a todos los tutoriales{" "}
                 <span className={styles.subrayado}>aquí</span>
             </p>
             <TutorialCard
-                titulo="Invierte en una criptomoneda en Coinbase"
-                descripcion="Realiza una inversión en la moneda que prefieras utilizando el exchange de criptomonedas de Coinbase"
+                titulo="Crea una cuenta en Coinbase"
+                descripcion="Crea y verifica una cuenta en el exchange de criptomonedas Coinbase"
                 tiempo="5"
             />
             <TutorialCard
                 titulo="Invierte en una criptomoneda en Coinbase"
-                descripcion="Realiza una inversión en la moneda que prefieras utilizando el exchange de criptomonedas de Coinbase"
+                descripcion="Realiza una inversión en la moneda que prefieras utilizando el exchange de criptomonedas Coinbase"
                 tiempo="10"
             />
             <TutorialCard
