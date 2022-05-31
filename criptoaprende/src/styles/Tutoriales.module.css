@@ -1,0 +1,19 @@
+.container {
+    background-color: var(--main-color);
+}
+
+.titulo {
+    text-align: center;
+    margin-top: -3em;
+}
+
+/* Tablets y dispositivos grandes */
+@media (min-width: 768px) {
+}
+/* PC Portatil */
+@media (min-width: 992px) {
+}
+
+/* PC Escritorio */
+@media (min-width: 1200px) {
+}

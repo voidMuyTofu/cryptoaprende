@@ -1,32 +1,43 @@
 .container {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .titulo {
-  margin-top: 1em;
-  font-size: 2.7em;
-  z-index: 1;
+    margin-top: 1em;
+    font-size: 2.7em;
+    z-index: 1;
 }
 
 .descripcion {
-  margin-top: 0.6em;
-  margin-bottom: 1em;
-  z-index: 1;
+    margin-top: 0.6em;
+    margin-bottom: 1em;
+    z-index: 1;
 }
 
 .subrayado {
-  cursor: pointer;
-  text-decoration: underline var(--blue-color) 0.4em;
-  text-decoration-skip-ink: none;
-  text-underline-offset: -0.38em;
+    cursor: pointer;
+    text-decoration: underline var(--blue-color) 0.4em;
+    text-decoration-skip-ink: none;
+    text-underline-offset: -0.38em;
 }
 
 .blob1 {
-  position: absolute;
-  z-index: 0;
-  left: 1em;
-  top: 61.2em;
+    position: absolute;
+    z-index: 0;
+    left: 1em;
+    top: 61.2em;
+}
+
+/* Tablets y dispositivos grandes */
+@media (min-width: 768px) {
+}
+/* PC Portatil */
+@media (min-width: 992px) {
+}
+
+/* PC Escritorio */
+@media (min-width: 1200px) {
 }
