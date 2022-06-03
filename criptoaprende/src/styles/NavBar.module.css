@@ -1,128 +1,126 @@
 .todo {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  z-index: 7;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 7;
 }
 .navbar {
-  background-color: var(--secondary-color);
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 6;
-  width: 100%;
-  border-bottom: 3px solid black;
+    background-color: var(--secondary-color);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 6;
+    width: 100%;
+    border-bottom: 3px solid black;
 }
 
 .content {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 .titulo {
-  font-size: 1.7em;
-  margin-top: 0.4em;
-  margin-left: 0.4em;
-  margin-bottom: 0.4em;
+    font-size: 1.7em;
+    margin-top: 0.4em;
+    margin-left: 0.4em;
+    margin-bottom: 0.4em;
 }
 
 .hamburgerMenu {
-  margin-left: auto;
-  margin-top: 0.79em;
-  cursor: pointer;
-  margin-right: 0.5em;
+    margin-left: auto;
+    margin-top: 0.79em;
+    cursor: pointer;
+    margin-right: 0.5em;
 }
 
 .botonera {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 3.5em;
-  display: flex;
-  background-color: var(--secondary-color);
-  flex-direction: column;
-  align-items: center;
-  padding: 0.7em 1em;
-  z-index: 5;
-  border-bottom: 3px solid black;
-  transform: translateY(-100%);
-  transition: transform 0.3s ease-in-out;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 3.5em;
+    display: flex;
+    background-color: var(--secondary-color);
+    flex-direction: column;
+    align-items: center;
+    padding: 0.7em 1em;
+    z-index: 5;
+    border-bottom: 3px solid black;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
 }
 
 .botoneraAbierta {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 3.5em;
-  display: flex;
-  background-color: var(--secondary-color);
-  flex-direction: column;
-  align-items: center;
-  padding: 0.7em 1em;
-  z-index: 5;
-  border-bottom: 3px solid black;
-  transform: translateY(0);
-  transition: transform 0.3s ease-in-out;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 3.5em;
+    display: flex;
+    background-color: var(--secondary-color);
+    flex-direction: column;
+    align-items: center;
+    padding: 0.7em 1em;
+    z-index: 5;
+    border-bottom: 3px solid black;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
 }
 
 .botones {
-  padding: 0;
-  font-size: 1.2em;
-  color: var(--black-color);
-  text-decoration: none;
-  font-weight: 300;
+    padding: 0;
+    font-size: 1.2em;
+    color: var(--black-color);
+    text-decoration: none;
+    font-weight: 300;
 }
 
 .botonesActive {
-  font-size: 1.2em;
-  color: var(--black-color);
-  text-decoration: underline solid 2px;
-  text-underline-offset: 2px;
+    font-size: 1.2em;
+    color: var(--black-color);
 }
 
 /* Tablets y dispositivos grandes */
 @media (min-width: 768px) {
-  .todo {
-    flex-direction: row;
-  }
-  .navbar {
-    background-color: var(--secondary-color);
-    position: fixed;
-    z-index: 5;
-    width: 100%;
-  }
+    .todo {
+        flex-direction: row;
+    }
+    .navbar {
+        background-color: var(--secondary-color);
+        position: fixed;
+        z-index: 5;
+        width: 100%;
+    }
 
-  .content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
-  .titulo {
-    margin-top: 0.5em;
-  }
-  .hamburgerMenu {
-    display: none;
-  }
-  .botonera {
-    margin-top: 0.4em;
-    margin-left: auto;
-    border-bottom: none;
-    flex-direction: row;
-    transform: translateY(0);
-  }
+    .titulo {
+        margin-top: 0.5em;
+    }
+    .hamburgerMenu {
+        display: none;
+    }
+    .botonera {
+        margin-top: 0.4em;
+        margin-left: auto;
+        border-bottom: none;
+        flex-direction: row;
+        transform: translateY(0);
+    }
 
-  .botonera :last-child {
-    margin-right: 1.5em;
-  }
+    .botonera :last-child {
+        margin-right: 1.5em;
+    }
 
-  .botones {
-    margin-left: 3em;
-    cursor: pointer;
-  }
-  .botones :hover {
-    cursor: pointer;
-    font-size: 3em;
-  }
+    .botones {
+        margin-left: 3em;
+        cursor: pointer;
+    }
+    .botones :hover {
+        cursor: pointer;
+        font-size: 3em;
+    }
 }
 
 /* PC Portatil */

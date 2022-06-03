@@ -24,6 +24,7 @@
 .descripcion {
     font-size: 0.9em;
     width: 90%;
+    width: calc(100% - 1em);
     padding: 0;
     margin-left: 0.3em;
     margin-top: 0.7em;
@@ -34,5 +35,5 @@
     font-size: 0.8em;
     padding: 0;
     bottom: 0.5em;
-    left: 0.5em;
+    left: 0.3em;
 }
