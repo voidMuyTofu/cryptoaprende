@@ -1,8 +1,17 @@
+@keyframes border {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
 .titulo {
     margin-top: -1.8em;
     text-align: center;
     width: 9em;
-    line-height: 1.3em;
+    line-height: 1.1em;
     font-size: 2.7em;
 }
 
@@ -13,9 +22,24 @@
 }
 
 .subrayado {
-    text-decoration: underline var(--green-color) 0.47em;
-    text-decoration-skip-ink: none;
-    text-underline-offset: -0.45em;
+    display: inline-block;
+    position: relative;
+}
+
+.subrayado::after {
+    content: "";
+    width: 0px;
+    display: block;
+    height: 0.47em;
+    margin-top: -0.42em;
+    background: var(--green-color);
+    -webkit-animation-name: border;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: border;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
 }
 
 .descripcion {
