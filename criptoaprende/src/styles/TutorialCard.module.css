@@ -1,39 +1,29 @@
 .container {
-    margin-bottom: 1.8em;
-    position: relative;
-    background-color: var(--secondary-color);
-    width: 73%;
-    height: 10.5em;
-    text-align: left;
-    border: var(--black-color) 0.3em solid;
-    box-shadow: 0.4em 0.4em var(--black-color);
-    border-radius: 0.5em;
+  margin-bottom: 1.8em;
+  position: relative;
+  background-color: var(--secondary-color);
+  width: 73%;
+  height: 12em;
+  text-align: left;
+  border: var(--black-color) 0.3em solid;
+  box-shadow: 0.4em 0.4em var(--black-color);
+  border-radius: 0.5em;
 }
 
 .container:hover {
-    background-color: aqua;
+  background-color: aqua;
 }
 
 .titulo {
-    font-size: 1.15em;
-    margin-left: 0.3em;
-    margin-top: 0.4em;
-    margin-bottom: 0;
+  font-size: 1.3em;
 }
 
 .descripcion {
-    font-size: 0.9em;
-    width: 90%;
-    width: calc(100% - 1em);
-    padding: 0;
-    margin-left: 0.3em;
-    margin-top: 0.7em;
+  font-size: 1em;
+  width: 90%;
+  width: calc(100% - 1em);
 }
 
 .tiempo {
-    position: absolute;
-    font-size: 0.8em;
-    padding: 0;
-    bottom: 0.5em;
-    left: 0.3em;
+  font-size: 0.8em;
 }
