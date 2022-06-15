@@ -1,10 +1,10 @@
 .container {
-    background-color: var(--main-color);
+  background-color: var(--main-color);
+  text-align: center;
 }
 
 .titulo {
-    text-align: center;
-    margin-top: -3em;
+  margin-top: -2.2em;
 }
 
 /* Tablets y dispositivos grandes */
