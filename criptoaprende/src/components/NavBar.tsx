@@ -38,7 +38,7 @@ export default function NavBar() {
       </div>
       <div className={isClosed ? styles.botonera : styles.botoneraAbierta}>
         <NavLink
-          className={(isActive) =>
+          className={({ isActive }) =>
             isActive ? styles.botonesActive : styles.botones
           }
           to="/"
@@ -47,7 +47,7 @@ export default function NavBar() {
         </NavLink>
         <NavLink
           to="/tutoriales"
-          className={(isActive) =>
+          className={({ isActive }) =>
             isActive ? styles.botonesActive : styles.botones
           }
         >
@@ -55,7 +55,7 @@ export default function NavBar() {
         </NavLink>
         <NavLink
           to="/plataformas"
-          className={(isActive) =>
+          className={({ isActive }) =>
             isActive ? styles.botonesActive : styles.botones
           }
         >

@@ -1,10 +1,16 @@
 .container {
-  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
 .titulo {
   margin-top: -2.2em;
+}
+
+.descripcion {
+  width: 90%;
 }
 
 /* Tablets y dispositivos grandes */
