@@ -35,8 +35,8 @@ export default function TutorialesSection() {
         tiempo="10"
       />
       <TutorialCard
-        titulo="Invierte en una criptomoneda en Coinbase"
-        descripcion="Realiza una inversión en la moneda que prefieras utilizando el exchange de criptomonedas de Coinbase"
+        titulo="Gana intereses en Youholder"
+        descripcion="Gana intereses semanalmente con tus criptomonedas"
         tiempo="5"
       />
     </div>

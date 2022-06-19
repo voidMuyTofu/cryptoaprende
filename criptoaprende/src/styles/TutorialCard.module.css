@@ -2,8 +2,8 @@
   margin-bottom: 1.8em;
   position: relative;
   background-color: var(--secondary-color);
-  width: 73%;
-  height: 12em;
+  width: 80%;
+  height: 9.5em;
   text-align: left;
   border: var(--black-color) 0.3em solid;
   box-shadow: 0.4em 0.4em var(--black-color);
@@ -15,15 +15,17 @@
 }
 
 .titulo {
-  font-size: 1.3em;
+  margin: 0;
+  padding: 0.5em 0.3em;
+  font-size: 1.2em;
 }
 
 .descripcion {
+  padding: 0.5em 0.3em;
   font-size: 1em;
-  width: 90%;
-  width: calc(100% - 1em);
 }
 
 .tiempo {
   font-size: 0.8em;
+  padding: 0.5em 0.4em;
 }
