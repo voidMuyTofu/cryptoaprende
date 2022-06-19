@@ -19,27 +19,6 @@
   align-items: center;
 }
 
-.subrayado {
-  display: inline-block;
-  position: relative;
-}
-
-.subrayado::after {
-  content: "";
-  width: 0px;
-  display: block;
-  height: 0.47em;
-  margin-top: -0.42em;
-  background: var(--green-color);
-  -webkit-animation-name: border;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-  animation-name: border;
-  animation-duration: 0.7s;
-  animation-delay: 0.5s;
-  animation-fill-mode: forwards;
-}
-
 .descripcion {
   margin-top: 1.3em;
   padding: 0 1em;

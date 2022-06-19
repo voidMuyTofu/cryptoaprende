@@ -1,0 +1,92 @@
+@keyframes border {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.onLoadGreen {
+  display: inline-block;
+  position: relative;
+}
+
+.onLoadGreen::after {
+  content: "";
+  width: 0px;
+  display: block;
+  height: 0.47em;
+  margin-top: -0.45em;
+  background: var(--green-color);
+  -webkit-animation-name: border;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: border;
+  animation-duration: 0.7s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.onLoadPink {
+  display: inline-block;
+  position: relative;
+}
+
+.onLoadPink::after {
+  content: "";
+  width: 0px;
+  display: block;
+  height: 0.47em;
+  margin-top: -0.45em;
+  background: var(--pink-color);
+  -webkit-animation-name: border;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: border;
+  animation-duration: 0.7s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.onLoadBlue {
+  display: inline-block;
+  position: relative;
+}
+
+.onLoadBlue::after {
+  content: "";
+  width: 0px;
+  display: block;
+  height: 0.47em;
+  margin-top: -0.45em;
+  background: var(--blue-color);
+  -webkit-animation-name: border;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: border;
+  animation-duration: 0.7s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.onLoadPurple {
+  display: inline-block;
+  position: relative;
+}
+
+.onLoadPurple::after {
+  content: "";
+  width: 0px;
+  display: block;
+  height: 0.47em;
+  margin-top: -0.45em;
+  background: var(--purple-color);
+  -webkit-animation-name: border;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: border;
+  animation-duration: 0.7s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
