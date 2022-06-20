@@ -1,5 +1,5 @@
 import styles from "../styles/HeroSection.module.css";
-import image from "../public/hero3.svg";
+import image from "../public/hero.svg";
 import { useNavigate } from "react-router-dom";
 import TutorialesSection from "./TutorialesSection";
 import Subrayado from "./Subrayado";
