@@ -1,5 +1,6 @@
 import styles from "../styles/TutorialesSection.module.css";
 import TutorialCard from "./TutorialCard";
+import data from "../data/LoMasPopular";
 
 export default function TutorialesSection() {
   return (
@@ -24,21 +25,15 @@ export default function TutorialesSection() {
         Esta es una selección de los tutoriales más populares. Puedes acceder a
         todos los tutoriales <span className={styles.subrayado}>aquí</span>
       </p>
-      <TutorialCard
-        titulo="Crea una cuenta en Coinbase"
-        descripcion="Crea y verifica una cuenta en Coinbase"
-        tiempo="5"
-      />
-      <TutorialCard
-        titulo="Invierte usando Coinbase"
-        descripcion="Realiza una inversión en una criptomoneda en Coinbase"
-        tiempo="10"
-      />
-      <TutorialCard
-        titulo="Gana intereses en Youholder"
-        descripcion="Gana intereses semanalmente con tus criptomonedas"
-        tiempo="5"
-      />
+      {data.map((tutorial) => {
+        return (
+          <TutorialCard
+            titulo={tutorial.titulo}
+            descripcion={tutorial.descripcion}
+            tiempo={tutorial.tiempo}
+          />
+        );
+      })}
     </div>
   );
 }
