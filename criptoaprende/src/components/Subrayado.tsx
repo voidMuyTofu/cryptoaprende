@@ -7,6 +7,12 @@ interface Props {
     color: string;
 }
 
+/**
+ * ! Utilizar solo el verde para h1 y el resto para p
+ * ! en los estilos el unico que es distinto es el
+ * ! margin top en el ::after del onLoadGreen
+ */
+
 export default function Subrayado(Props: Props) {
     switch (Props.animation) {
         case "onLoad":

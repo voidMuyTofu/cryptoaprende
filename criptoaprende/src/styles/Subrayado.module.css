@@ -59,7 +59,7 @@
     width: 0px;
     display: block;
     height: 0.47em;
-    margin-top: -0.45em;
+    margin-top: -0.55em;
     background: var(--blue-color);
     -webkit-animation-name: border;
     -webkit-animation-duration: 1s;
@@ -80,7 +80,7 @@
     width: 0px;
     display: block;
     height: 0.47em;
-    margin-top: -0.45em;
+    margin-top: -0.55em;
     background: var(--purple-color);
     -webkit-animation-name: border;
     -webkit-animation-duration: 1s;
