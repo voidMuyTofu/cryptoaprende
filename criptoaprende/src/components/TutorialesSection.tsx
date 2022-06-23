@@ -25,7 +25,9 @@ export default function TutorialesSection() {
             <p className={styles.descripcion}>
                 Esta es una selección de los tutoriales más populares. Puedes
                 acceder a todos los tutoriales{" "}
-                <span className={styles.subrayado}>aquí</span>
+                <Subrayado animation="onLoad" color="blue">
+                    aquí
+                </Subrayado>
             </p>
             {data.map((tutorial) => {
                 return (
