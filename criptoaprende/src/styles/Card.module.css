@@ -1,0 +1,66 @@
+/* Css del case "home" */
+.containerHome {
+  margin-bottom: 1.8em;
+  position: relative;
+  background-color: var(--secondary-color);
+  width: 75%;
+  height: 10.8em;
+  text-align: left;
+  border: var(--black-color) 0.3em solid;
+  box-shadow: 0.4em 0.4em var(--black-color);
+  border-radius: 0.5em;
+}
+
+.containerHome:hover {
+  background-color: aqua;
+}
+
+.tituloHome {
+  margin: 0;
+  padding-left: 0.4em;
+  padding-top: 0.5em;
+  font-size: 1.2em;
+  width: 80%;
+}
+
+.descripcionHome {
+  padding-left: 0.4em;
+  padding-top: 0.8em;
+  font-size: 1em;
+  width: 95%;
+}
+
+.tiempoHome {
+  font-size: 0.8em;
+  padding-left: 0.6em;
+  margin-top: 1.5em;
+}
+/* Css del case "nivel" */
+.containerNivel {
+  margin-top: 1.8em;
+  position: relative;
+  background-color: var(--secondary-color);
+  width: 70%;
+  height: 9.8em;
+  border: var(--black-color) 0.3em solid;
+  box-shadow: 0.4em 0.4em var(--black-color);
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containerNivel:hover {
+  background-color: aqua;
+}
+
+.tituloNivel {
+  margin: 0.3em;
+  font-size: 2.2em;
+}
+
+.imagenNivel {
+  margin: 0;
+  width: 25%;
+}
+/* Css del case "tutorial" */

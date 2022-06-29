@@ -3,6 +3,7 @@ import image from "../public/hero.svg";
 import { useNavigate } from "react-router-dom";
 import TutorialesSection from "./TutorialesSection";
 import Subrayado from "./Subrayado";
+
 export default function HeroSection() {
   const navigate = useNavigate();
   return (

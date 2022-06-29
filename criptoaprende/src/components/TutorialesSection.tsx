@@ -1,6 +1,6 @@
 import styles from "../styles/TutorialesSection.module.css";
 import Subrayado from "./Subrayado";
-import TutorialCard from "./TutorialCard";
+import TutorialCard from "./Card";
 import data from "../data/LoMasPopular";
 
 export default function TutorialesSection() {
