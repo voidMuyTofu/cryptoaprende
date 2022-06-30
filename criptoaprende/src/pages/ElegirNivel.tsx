@@ -20,9 +20,24 @@ export default function Tutoriales() {
           </Subrayado>{" "}
           que consideres que más se ajusta al tuyo
         </p>
-        <Card tipo="nivel" titulo="Principiante" imagen={iconoPrincipiante} />
-        <Card tipo="nivel" titulo="Intermedio" imagen={iconoIntermedio} />
-        <Card tipo="nivel" titulo="Avanzado" imagen={iconoAvanzado} />
+        <Card
+          tipo="nivel"
+          titulo="Principiante"
+          imagen={iconoPrincipiante}
+          to="/tutoriales/principiante"
+        />
+        <Card
+          tipo="nivel"
+          titulo="Intermedio"
+          imagen={iconoIntermedio}
+          to="/tutoriales/intermedio"
+        />
+        <Card
+          tipo="nivel"
+          titulo="Avanzado"
+          imagen={iconoAvanzado}
+          to="/tutoriales/avanzado"
+        />
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import styles from "../styles/Card.module.css";
+import { useNavigate } from "react-router-dom";
 
 interface ICard {
   tipo: string;
@@ -6,9 +7,12 @@ interface ICard {
   descripcion?: string;
   imagen?: string;
   tiempo?: string;
+  to?: string;
 }
 
 export default function TutorialCard(props: ICard) {
+  const navigate = useNavigate();
+
   switch (props.tipo) {
     case "home":
       return (
@@ -22,7 +26,12 @@ export default function TutorialCard(props: ICard) {
       );
     case "nivel":
       return (
-        <div className={styles.containerNivel}>
+        <div
+          className={styles.containerNivel}
+          onClick={() => {
+            navigate(props.to);
+          }}
+        >
           <h3 className={styles.tituloNivel}>{props.titulo}</h3>
           <img src={props.imagen} className={styles.imagenNivel}></img>
         </div>
