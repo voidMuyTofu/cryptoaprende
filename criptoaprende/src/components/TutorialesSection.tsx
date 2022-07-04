@@ -1,9 +1,35 @@
 import styles from "../styles/TutorialesSection.module.css";
 import Subrayado from "./Subrayado";
 import TutorialCard from "./Card";
-import data from "../data/LoMasPopular";
+import { useEffect, useState } from "react";
+
+interface IHomeTutoriales {
+  key: string;
+  titulo: string;
+  descripcion: string;
+  tiempo: string;
+}
 
 export default function TutorialesSection() {
+  const [data, setData] = useState<IHomeTutoriales[]>();
+
+  useEffect(() => {
+    fetch("http://localhost:3000/src/data/LoMasPopular.json")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`Error HTTP: El status es ${response.status}`);
+        }
+        return response.json();
+      })
+      .then((actualData) => {
+        setData(actualData);
+      })
+      .catch((err) => {
+        setData([]);
+        console.log(err.message);
+      });
+  }, []);
+
   return (
     <div className={styles.container}>
       <svg
@@ -29,7 +55,7 @@ export default function TutorialesSection() {
           aquí
         </Subrayado>
       </p>
-      {data.map((tutorial) => {
+      {data?.map((tutorial) => {
         return (
           <TutorialCard
             key={tutorial.key}

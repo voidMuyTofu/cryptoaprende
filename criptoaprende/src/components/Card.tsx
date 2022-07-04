@@ -7,7 +7,7 @@ interface ICard {
   descripcion?: string;
   imagen?: string;
   tiempo?: string;
-  to?: string;
+  toURL?: string;
 }
 
 export default function TutorialCard(props: ICard) {
@@ -29,7 +29,7 @@ export default function TutorialCard(props: ICard) {
         <div
           className={styles.containerNivel}
           onClick={() => {
-            navigate(props.to);
+            navigate(props.toURL as string);
           }}
         >
           <h3 className={styles.tituloNivel}>{props.titulo}</h3>
