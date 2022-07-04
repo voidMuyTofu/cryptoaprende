@@ -1,7 +1,7 @@
 interface ITutoriales {
-  url: string;
+    url: string;
 }
 
 export default function Tutoriales(props: ITutoriales) {
-  return <h1>Tutoriales</h1>;
+    return <h1>{props.url}</h1>;
 }
