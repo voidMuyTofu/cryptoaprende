@@ -5,12 +5,19 @@
   text-align: center;
 }
 
+.cardContainer {
+  display: grid;
+  gap: 1.8em;
+  margin-top: 1.5em;
+}
+
 .titulo {
-  margin-top: -2.2em;
+  margin-top: -2.1em;
 }
 
 .descripcion {
   width: 90%;
+  margin-top: 0.15em;
 }
 
 /* Tablets y dispositivos grandes */

@@ -1,7 +1,8 @@
 interface ITutoriales {
-    url: string;
+  url: string;
+  nivel: string;
 }
 
 export default function Tutoriales(props: ITutoriales) {
-    return <h1>{props.url}</h1>;
+  return <h1></h1>;
 }

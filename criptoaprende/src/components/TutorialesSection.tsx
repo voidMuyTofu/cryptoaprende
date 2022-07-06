@@ -55,17 +55,19 @@ export default function TutorialesSection() {
           aquí
         </Subrayado>
       </p>
-      {data?.map((tutorial) => {
-        return (
-          <TutorialCard
-            key={tutorial.key}
-            tipo="home"
-            titulo={tutorial.titulo}
-            descripcion={tutorial.descripcion}
-            tiempo={tutorial.tiempo}
-          />
-        );
-      })}
+      <div className={styles.cardContainer}>
+        {data?.map((tutorial) => {
+          return (
+            <TutorialCard
+              key={tutorial.key}
+              tipo="home"
+              titulo={tutorial.titulo}
+              descripcion={tutorial.descripcion}
+              tiempo={tutorial.tiempo}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 }

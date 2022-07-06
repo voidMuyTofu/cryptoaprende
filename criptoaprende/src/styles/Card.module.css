@@ -37,10 +37,8 @@
 }
 /* Css del case "nivel" */
 .containerNivel {
-  margin-top: 1.8em;
   position: relative;
   background-color: var(--secondary-color);
-  width: 70%;
   height: 9.8em;
   border: var(--black-color) 0.3em solid;
   box-shadow: 0.4em 0.4em var(--black-color);
