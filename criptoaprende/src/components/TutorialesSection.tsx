@@ -5,7 +5,8 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 interface IHomeTutoriales {
-  key: string;
+  id: number;
+  url: string;
   titulo: string;
   descripcion: string;
   tiempo: string;
@@ -65,11 +66,12 @@ export default function TutorialesSection() {
         {data?.map((tutorial) => {
           return (
             <Link
-              to={`/tutoriales/principiante/${tutorial.key}`}
+              key={tutorial.id}
+              to={`/tutoriales/principiante/${tutorial.url}`}
               style={{ textDecoration: "none", color: "black" }}
             >
               <TutorialCard
-                key={tutorial.key}
+                key={tutorial.id}
                 tipo="home"
                 titulo={tutorial.titulo}
                 descripcion={tutorial.descripcion}
