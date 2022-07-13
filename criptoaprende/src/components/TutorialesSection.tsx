@@ -2,6 +2,7 @@ import styles from "../styles/TutorialesSection.module.css";
 import Subrayado from "./Subrayado";
 import TutorialCard from "./Card";
 import { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 interface IHomeTutoriales {
   key: string;
@@ -12,6 +13,7 @@ interface IHomeTutoriales {
 
 export default function TutorialesSection() {
   const [data, setData] = useState<IHomeTutoriales[]>();
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch("http://localhost:3000/src/data/LoMasPopular.json")
@@ -51,20 +53,29 @@ export default function TutorialesSection() {
       <p className={styles.descripcion}>
         Esta es una selección de los tutoriales más populares. Puedes acceder a
         todos los tutoriales{" "}
-        <Subrayado animation="onLoad" color="blue">
+        <Subrayado
+          animation="onLoad"
+          color="blue"
+          onClick={() => navigate("/tutoriales")}
+        >
           aquí
         </Subrayado>
       </p>
       <div className={styles.cardContainer}>
         {data?.map((tutorial) => {
           return (
-            <TutorialCard
-              key={tutorial.key}
-              tipo="home"
-              titulo={tutorial.titulo}
-              descripcion={tutorial.descripcion}
-              tiempo={tutorial.tiempo}
-            />
+            <Link
+              to={`/tutoriales/principiante/${tutorial.key}`}
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              <TutorialCard
+                key={tutorial.key}
+                tipo="home"
+                titulo={tutorial.titulo}
+                descripcion={tutorial.descripcion}
+                tiempo={tutorial.tiempo}
+              />
+            </Link>
           );
         })}
       </div>

@@ -1,18 +1,18 @@
 [
   {
-    "key": 0,
+    "key": "crear-cuenta-coinbase",
     "titulo": "Crea una cuenta en Coinbase",
     "descripcion": "Crea y verifica una cuenta en Coinbase",
     "tiempo": "5"
   },
   {
-    "key": 1,
+    "key": "invertir-en-coinbase",
     "titulo": "Invierte usando Coinbase",
     "descripcion": "Realiza una inversión en una criptomoneda en Coinbase",
     "tiempo": "10"
   },
   {
-    "key": 2,
+    "key": "ganar-interes-youholder",
     "titulo": "Gana intereses en Youholder",
     "descripcion": "Gana intereses semanalmente con tus criptomonedas",
     "tiempo": "15"
