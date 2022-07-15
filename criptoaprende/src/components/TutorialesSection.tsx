@@ -17,7 +17,7 @@ export default function TutorialesSection() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:3000/src/data/LoMasPopular.json")
+    fetch(import.meta.env["VITE_API_POPULARES"] as string)
       .then((response) => {
         if (!response.ok) {
           throw new Error(`Error HTTP: El status es ${response.status}`);
