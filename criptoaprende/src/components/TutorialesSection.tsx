@@ -17,7 +17,7 @@ export default function TutorialesSection() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(import.meta.env["VITE_API_POPULARES"] as string)
+    fetch(import.meta.env.VITE_API_POPULARES)
       .then((response) => {
         if (!response.ok) {
           throw new Error(`Error HTTP: El status es ${response.status}`);
