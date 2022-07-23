@@ -1,17 +1,8 @@
 import { useEffect, useState } from "react";
 import { useLocation, useParams } from "react-router-dom";
+import ITutorial from "../interfaces/ITutorial";
 
 export default function TutorialPage() {
-  interface ITutorial {
-    id: number;
-    url: string;
-    urlVideo: string;
-    titulo: string;
-    descripcion: string;
-    tiempo: number;
-    texto: string;
-  }
-
   const params = useParams();
   const location = useLocation();
   const nivel = location.pathname.split("/", 3)[2];

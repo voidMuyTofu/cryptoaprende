@@ -8,40 +8,39 @@ import iconoAvanzado from "../public/icono_avanzado.svg";
 import { Outlet } from "react-router-dom";
 
 export default function ElegirNivel() {
-    return (
-        <div>
-            <Outlet></Outlet>
-            <NavBar />
-            <div className={styles.container}>
-                <h1 className={styles.titulo}>Niveles</h1>
-                <p className={styles.descripcion}>
-                    Elige el{" "}
-                    <Subrayado animation="onLoad" color="pink">
-                        nivel
-                    </Subrayado>{" "}
-                    que consideres que más se ajusta al tuyo
-                </p>
-                <div className={styles.cardContainer}>
-                    <Card
-                        tipo="nivel"
-                        titulo="Principiante"
-                        imagen={iconoPrincipiante}
-                        toURL="/tutoriales/principiante"
-                    />
-                    <Card
-                        tipo="nivel"
-                        titulo="Intermedio"
-                        imagen={iconoIntermedio}
-                        toURL="/tutoriales/intermedio"
-                    />
-                    <Card
-                        tipo="nivel"
-                        titulo="Avanzado"
-                        imagen={iconoAvanzado}
-                        toURL="/tutoriales/avanzado"
-                    />
-                </div>
-            </div>
+  return (
+    <div>
+      <NavBar />
+      <div className={styles.container}>
+        <h1 className={styles.titulo}>Niveles</h1>
+        <p className={styles.descripcion}>
+          Elige el{" "}
+          <Subrayado animation="onLoad" color="pink">
+            nivel
+          </Subrayado>{" "}
+          que consideres que más se ajusta al tuyo
+        </p>
+        <div className={styles.cardContainer}>
+          <Card
+            tipo="nivel"
+            titulo="Principiante"
+            imagen={iconoPrincipiante}
+            toURL="/tutoriales/principiante"
+          />
+          <Card
+            tipo="nivel"
+            titulo="Intermedio"
+            imagen={iconoIntermedio}
+            toURL="/tutoriales/intermedio"
+          />
+          <Card
+            tipo="nivel"
+            titulo="Avanzado"
+            imagen={iconoAvanzado}
+            toURL="/tutoriales/avanzado"
+          />
         </div>
-    );
+      </div>
+    </div>
+  );
 }

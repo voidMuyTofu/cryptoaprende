@@ -4,9 +4,9 @@ import "./index.css";
 import App from "./App";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ElegirNivel from "./pages/ElegirNivel";
-import Tutoriales from "./pages/Tutoriales";
+import Tutoriales from "./pages/TutorialesPage";
 import Page404 from "./pages/Page404";
-import TutorialPage from "./components/TutorialPage";
+import TutorialPage from "./pages/TutorialPage";
 
 ReactDOM.render(
   <BrowserRouter>
