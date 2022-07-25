@@ -5,6 +5,7 @@
     "url-video": "https://youtu.be/BpJyt7_P5Qk",
     "titulo": "Crea una cuenta en Coinbase",
     "descripcion": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+    "plataforma": "coinbase",
     "tiempo": "5",
     "texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas congue, sem sit amet varius consectetur, orci massa ornare orci, eget vestibulum justo velit sit amet odio. Fusce dictum efficitur malesuada. Praesent fermentum, leo quis euismod tempor, lacus dolor malesuada magna, ac bibendum mauris quam sed lacus. Pellentesque scelerisque urna massa, id pretium nisl tincidunt et. Nulla augue quam, accumsan vitae dignissim eu, volutpat ut tellus. Proin et erat in neque interdum mattis id non urna. Vestibulum eros tellus, blandit vitae tempor at, dictum bibendum mauris. Quisque aliquam pharetra vestibulum. Donec ullamcorper iaculis mauris, euismod viverra felis lobortis at. Praesent finibus eleifend lorem eget finibus. Proin varius tempus ante, at consequat diam scelerisque id. Donec ultrices quam eget augue suscipit rhoncus. Praesent in malesuada tellus, eleifend ullamcorper lorem. Phasellus turpis mauris, ultricies a iaculis vel, feugiat nec ipsum. Etiam dignissim lobortis sapien, ac blandit sem consequat eu."
   },
@@ -14,6 +15,7 @@
     "url-video": "https://youtu.be/BpJyt7_P5Qk",
     "titulo": "Invierte usando Coinbase",
     "descripcion": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+    "plataforma": "coinbase",
     "tiempo": "10",
     "texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas congue, sem sit amet varius consectetur, orci massa ornare orci, eget vestibulum justo velit sit amet odio. Fusce dictum efficitur malesuada. Praesent fermentum, leo quis euismod tempor, lacus dolor malesuada magna, ac bibendum mauris quam sed lacus. Pellentesque scelerisque urna massa, id pretium nisl tincidunt et. Nulla augue quam, accumsan vitae dignissim eu, volutpat ut tellus. Proin et erat in neque interdum mattis id non urna. Vestibulum eros tellus, blandit vitae tempor at, dictum bibendum mauris. Quisque aliquam pharetra vestibulum. Donec ullamcorper iaculis mauris, euismod viverra felis lobortis at. Praesent finibus eleifend lorem eget finibus. Proin varius tempus ante, at consequat diam scelerisque id. Donec ultrices quam eget augue suscipit rhoncus. Praesent in malesuada tellus, eleifend ullamcorper lorem. Phasellus turpis mauris, ultricies a iaculis vel, feugiat nec ipsum. Etiam dignissim lobortis sapien, ac blandit sem consequat eu."
   },
@@ -23,6 +25,7 @@
     "url-video": "https://youtu.be/BpJyt7_P5Qk",
     "titulo": "Gana intereses en Youholder",
     "descripcion": "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+    "plataforma": "youholder",
     "tiempo": "15",
     "texto": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas congue, sem sit amet varius consectetur, orci massa ornare orci, eget vestibulum justo velit sit amet odio. Fusce dictum efficitur malesuada. Praesent fermentum, leo quis euismod tempor, lacus dolor malesuada magna, ac bibendum mauris quam sed lacus. Pellentesque scelerisque urna massa, id pretium nisl tincidunt et. Nulla augue quam, accumsan vitae dignissim eu, volutpat ut tellus. Proin et erat in neque interdum mattis id non urna. Vestibulum eros tellus, blandit vitae tempor at, dictum bibendum mauris. Quisque aliquam pharetra vestibulum. Donec ullamcorper iaculis mauris, euismod viverra felis lobortis at. Praesent finibus eleifend lorem eget finibus. Proin varius tempus ante, at consequat diam scelerisque id. Donec ultrices quam eget augue suscipit rhoncus. Praesent in malesuada tellus, eleifend ullamcorper lorem. Phasellus turpis mauris, ultricies a iaculis vel, feugiat nec ipsum. Etiam dignissim lobortis sapien, ac blandit sem consequat eu."
   }

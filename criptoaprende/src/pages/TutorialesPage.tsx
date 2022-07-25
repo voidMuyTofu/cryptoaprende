@@ -38,7 +38,6 @@ export default function Tutoriales(props: ITutorialesPage) {
       });
   }, []);
 
-  debugger;
   return (
     <>
       <NavBar />
@@ -46,7 +45,7 @@ export default function Tutoriales(props: ITutorialesPage) {
         <h1 className={styles.titulo}>Tutoriales</h1>
         <p>
           Aquí encontrarás todos los tutoriales de nivel{" "}
-          <Subrayado animation="onLoad" color="purple">
+          <Subrayado animation="onLoad" color="blue">
             {props.nivel}
           </Subrayado>
         </p>
