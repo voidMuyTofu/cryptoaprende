@@ -6,4 +6,5 @@ export default interface ITutorial {
   descripcion: string;
   tiempo: number;
   texto: string;
+  plataforma: string;
 }
