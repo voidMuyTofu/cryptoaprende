@@ -22,20 +22,25 @@ export default function Tutoriales(props: ITutorialesPage) {
       ? ""
       : import.meta.env.VITE_API_AVANZADO;
   const [data, setData] = useState<ITutorial[]>();
-  const [selectedOption, setSelectedOption] = useState("");
+  const [selectedPlataforma, setSelectedPlataforma] = useState("");
+  const [selectedTiempo, setSelectedTiempo] = useState("");
 
   useEffect(() => {
     fetchFromUrl(urlFetch, data, setData);
   }, []);
 
-  const getDropdownOptions = () => {
-    const plataformas: string[] = [];
+  const getDropdownOptions = (tipo: string) => {
+    const opciones: string[] = [];
 
     data?.map((data) => {
-      plataformas.push(titleCaseWord(data.plataforma));
+      if (tipo == "plataforma") {
+        opciones.push(titleCaseWord(data.plataforma));
+      } else if (tipo == "tiempo") {
+        opciones.push(data.tiempo.toString() + " min");
+      }
     });
 
-    return plataformas.filter(filterUniqueValues);
+    return opciones.filter(filterUniqueValues);
   };
 
   return (
@@ -49,11 +54,20 @@ export default function Tutoriales(props: ITutorialesPage) {
             {props.nivel}
           </Subrayado>
         </p>
-        <Dropdown
-          selectedOption={selectedOption}
-          setSelectedOption={setSelectedOption}
-          options={getDropdownOptions()}
-        />
+        <div className={styles.filtros}>
+          <Dropdown
+            selectedOption={selectedPlataforma}
+            setSelectedOption={setSelectedPlataforma}
+            options={getDropdownOptions("plataforma")}
+            tipo="plataforma"
+          />
+          <Dropdown
+            selectedOption={selectedTiempo}
+            setSelectedOption={setSelectedTiempo}
+            options={getDropdownOptions("tiempo")}
+            tipo="tiempo"
+          />
+        </div>
       </div>
     </>
   );

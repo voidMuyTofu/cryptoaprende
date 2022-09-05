@@ -1,14 +1,17 @@
 import React, { useState } from "react";
 import styles from "../styles/Dropdown.module.css";
+import iconoTiempo from "../public/icono_tiempo.svg";
 
 export default function Dropdown({
   selectedOption,
   setSelectedOption,
   options,
+  tipo,
 }: {
   selectedOption: string;
   setSelectedOption: React.Dispatch<React.SetStateAction<string>>;
   options: string[];
+  tipo: string;
 }) {
   const [isActive, setIsActive] = useState(false);
   return (
@@ -19,8 +22,14 @@ export default function Dropdown({
           setIsActive(!isActive);
         }}
       >
-        {selectedOption != "" ? selectedOption : "Plataforma"}
+        {tipo == "tiempo" && <img src={iconoTiempo}></img>}
+        {selectedOption != ""
+          ? selectedOption
+          : tipo == "plataforma"
+          ? "Plataforma"
+          : "Tiempo"}
         <svg
+          className={styles.triangulo}
           width="12"
           height="7"
           viewBox="0 0 12 7"

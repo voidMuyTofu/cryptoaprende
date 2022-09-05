@@ -4,12 +4,11 @@
 }
 
 .dropdown {
-  width: 11em;
   position: relative;
+  width: 9.5em;
   user-select: none;
-  margin-top: 1em;
   font-family: "Poppins";
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 400;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -47,4 +46,8 @@
 
 .dropdownItem:hover {
   background-color: var(--secondary-color-dark);
+}
+
+.triangulo {
+  margin-left: 0.5em;
 }
