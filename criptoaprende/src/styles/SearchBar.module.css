@@ -1,0 +1,33 @@
+.container {
+  margin-top: 0.8em;
+  padding: 0em 1em;
+  display: grid;
+  grid-template-columns: 10fr 1fr;
+  column-gap: 1em;
+}
+
+.inputText {
+  border-radius: 5px;
+  padding-left: 0.5em;
+  border: var(--black-color) 0.18em solid;
+  box-shadow: 0.19em 0.19em var(--black-color);
+  font-family: "Poppins";
+  font-size: 1em;
+  font-weight: 700;
+}
+.button {
+  background-color: var(--pink-color);
+  padding: 0.1em 1.4em;
+  border-radius: 5px;
+  border: var(--black-color) 0.18em solid;
+  box-shadow: 0.19em 0.19em var(--black-color);
+}
+
+.button:active {
+  background-color: #c1647b;
+  box-shadow: 0.1em 0.1em var(--black-color);
+}
+
+.searchIcon {
+  margin-top: 0.3em;
+}

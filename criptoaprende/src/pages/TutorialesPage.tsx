@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import Dropdown from "../components/Dropdown";
+import Filtros from "../components/Filtros";
 import NavBar from "../components/NavBar";
+import SearchBar from "../components/SearchBar";
 import Subrayado from "../components/Subrayado";
 import ITutorial from "../interfaces/ITutorial";
 import { fetchFromUrl, filterUniqueValues, titleCaseWord } from "../lib/utils";
@@ -54,20 +56,13 @@ export default function Tutoriales(props: ITutorialesPage) {
             {props.nivel}
           </Subrayado>
         </p>
-        <div className={styles.filtros}>
-          <Dropdown
-            selectedOption={selectedPlataforma}
-            setSelectedOption={setSelectedPlataforma}
-            options={getDropdownOptions("plataforma")}
-            tipo="plataforma"
-          />
-          <Dropdown
-            selectedOption={selectedTiempo}
-            setSelectedOption={setSelectedTiempo}
-            options={getDropdownOptions("tiempo")}
-            tipo="tiempo"
-          />
-        </div>
+        <Filtros
+          selectedPlataforma={selectedPlataforma}
+          setSelectedPlataforma={setSelectedPlataforma}
+          selectedTiempo={selectedTiempo}
+          setSelectedTiempo={setSelectedTiempo}
+          getDropdownOptions={getDropdownOptions}
+        />
       </div>
     </>
   );

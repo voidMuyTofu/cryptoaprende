@@ -12,10 +12,3 @@
 .descripcion {
   width: 95%;
 }
-
-.filtros {
-  margin-top: 1em;
-  display: flex;
-  flex-direction: row;
-  gap: 0.5em;
-}

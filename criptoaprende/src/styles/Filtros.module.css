@@ -1,0 +1,7 @@
+.filtros {
+  margin-top: 0.8em;
+  padding: 0em 1em;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 1em;
+}

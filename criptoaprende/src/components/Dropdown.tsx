@@ -22,12 +22,12 @@ export default function Dropdown({
           setIsActive(!isActive);
         }}
       >
-        {tipo == "tiempo" && <img src={iconoTiempo}></img>}
         {selectedOption != ""
           ? selectedOption
           : tipo == "plataforma"
           ? "Plataforma"
           : "Tiempo"}
+
         <svg
           className={styles.triangulo}
           width="12"

@@ -5,7 +5,6 @@
 
 .dropdown {
   position: relative;
-  width: 9.5em;
   user-select: none;
   font-family: "Poppins";
   font-size: 1em;
@@ -49,5 +48,4 @@
 }
 
 .triangulo {
-  margin-left: 0.5em;
 }
